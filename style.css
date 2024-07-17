@@ -1,0 +1,117 @@
+body {
+    background-image: url(./pexels-polina-kovaleva-5717456.jpg);
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    margin-top: 60px;
+}
+
+
+.todo-container {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+#list-container{
+    padding-left: 0px;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-container {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+#todo-input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+}
+
+#add-btn {
+    background-color: #32CD32;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.todo{
+    margin-bottom: 10px;
+    padding: 0 16px;
+    background-color: gray;
+    border-radius: 15px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.todo .todo-text{
+    padding: 15px;
+    flex-grow: 1;
+}
+
+.delete-btn{
+    background-color: #32CD32;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.delete-btn:hover{
+    background-color: #209720;
+}
+
+.delete-btn:hover img{
+    fill: #fff;
+}
+
+
+.custom-checkbox{
+    border: 2px solid #32CD32;
+    border-radius: 50%;
+    min-height: 20px;
+    min-width: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    transition: 200ms ease;
+    cursor: pointer;
+}
+
+input[type="checkbox"]:checked ~ .custom-checkbox{
+    background-color: #209720;
+}
+
+input[type="checkbox"]:checked ~ .todo-text{
+    text-decoration: line-through;
+}
+
+input[type="checkbox"]
+{
+    display: none;
+}
+
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
